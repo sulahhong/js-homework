@@ -78,14 +78,18 @@ console.log(getLoginStatus()); // true
 
 `querySelector` 메소드를 사용하여 DOM에서 요소를 선택하고 조작하여 HTML 요소에 접근하여 스타일, 속성, 내용 등을 동적으로 변경할 수 있습니다.
 ````
-const submitButton = document.querySelector('.btn-submit');
+const userEmail = document.querySelector('#userEmail');
+const userPassword = document.querySelector('#userPassword');
+const submit = document.querySelector('.btn-login');
 ````
 
 <br/>
 
 `addEventListener` 이벤트 리스너를 사용하여 클릭, 입력 등에 반응하는 이벤트 핸들러를 설정하여 특정 이벤트가 발생했을 때 실행될 함수를 정의하였습니다.
 ````
-submitButton.addEventListener('click', handleSubmit);
+userEmail.addEventListener('input', handleCheckId);
+userPassword.addEventListener('input', handleCheckPw);
+submit.addEventListener('click', handleSubmit);
 ````
 
 <br/>
@@ -93,9 +97,9 @@ submitButton.addEventListener('click', handleSubmit);
 `classList` 속성을 통해 HTML 요소의 클래스를 추가, 제거하여 요소의 스타일을 조건부로 변경할 수 있으며, 유효성 검사 결과에 따라 시각적 피드백을 제공하는 등의 용도로 사용되었습니다.
 ````
 if (!isValid) {
-  inputElement.classList.add('is-invalid');
+  this.classList.add('is-invalid');
 } else {
-  inputElement.classList.remove('is-invalid');
+  this.classList.remove('is-invalid');
 }
 ````
 
