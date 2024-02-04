@@ -21,7 +21,7 @@
 <br/>
 
 - 로그인 버튼 클릭 시, 성공 여부에 따른 페이지 이동
-  - 성공 시 `welcom.html` , 실패 시 `error.html` 로 이동합니다.
+  - 성공 시 `welcome.html` , 실패 시 `error.html` 로 이동합니다.
  
 <br/>
 
